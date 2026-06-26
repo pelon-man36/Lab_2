@@ -1,7 +1,7 @@
 from random import randint
 
 class Coin():
-    def __init__(self, _sideup):
+    def __init__(self, _sideup="Heads"):
         self._sideup = _sideup
 
     def toss(self):
@@ -10,4 +10,10 @@ class Coin():
             self._sideup = "Heads"
         else:
             self._sideup = "Tails"
-        print(self._sideup)
+
+    def get_sideup(self):
+        print(f"The current side is {self._sideup}")
+
+my_coin = Coin()
+my_coin.toss()
+my_coin.get_sideup()
