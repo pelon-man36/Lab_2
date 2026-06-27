@@ -1,3 +1,11 @@
+"""
+Coin Program
+Johan D. Ramirez Maldonado
+This program simulates flipping a single coin.
+It is either heads or tails.
+06/27/26
+"""
+
 from random import randint
 
 class Coin():

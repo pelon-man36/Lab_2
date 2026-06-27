@@ -1,3 +1,10 @@
+"""
+Player Program
+Johan D. Ramirez Maldonado
+This program simulates a player, using coin.py.
+06/27/26
+"""
+
 from coin import Coin
 
 class Player(Coin):

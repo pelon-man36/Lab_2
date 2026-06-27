@@ -1,3 +1,10 @@
+"""
+Main Program
+Johan D. Ramirez Maldonado
+This program runs a coin game using player.py.
+06/27/26
+"""
+
 from player import Player
 
 def main():
