@@ -6,4 +6,6 @@ class Player(Coin):
         self._wallet = _wallet
         self._coin = _coin
 
-
+    def toss_coin(self):
+        self._coin.toss()
+        print(self._coin.toss())
