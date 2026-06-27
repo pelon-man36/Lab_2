@@ -8,4 +8,7 @@ class Player(Coin):
 
     def toss_coin(self):
         self._coin.toss()
-        print(self._coin.toss())
+
+    def get_coin_side(self):
+        get_side = Coin()
+        get_side.get_sideup()
