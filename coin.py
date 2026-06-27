@@ -14,6 +14,3 @@ class Coin():
     def get_sideup(self):
         print(f"The current side is {self._sideup}")
 
-my_coin = Coin()
-my_coin.toss()
-my_coin.get_sideup()
