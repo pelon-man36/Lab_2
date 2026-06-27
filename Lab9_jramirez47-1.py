@@ -16,8 +16,12 @@ def main():
 
         if side1 == side2:
             print(f"Match! {player1.get_name()} wins a coin!")
+            player1.win_coin()
+            player2.lose_coin()
         else:
             print(f"No match! {player2.get_name()} wins a coin!")
+            player1.lose_coin()
+            player2.win_coin()
         
         option = input("Do you want to toss a coin?(y/n) ")
 
