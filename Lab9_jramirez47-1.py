@@ -29,4 +29,5 @@ def main():
         print(f"{player2.get_name()} has {player2.get_wallet} coins")
         option = input("Do you want to toss coins? (y/n) ")
 
-print("End of program")
+main()
+print("End of Program")
