@@ -42,6 +42,11 @@ def main():
                 option = input("Do you want to toss a coin?(y/n) ")
                 if option == "n":
                     break
+
+        if player1.get_wallet() == 0:
+            break
+        elif player2.get_wallet() == 0:
+            break
     
     print("Match end!")
     print(f"{player1.get_name()} total: {player1.get_wallet()} coins.")
