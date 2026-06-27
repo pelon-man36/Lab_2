@@ -5,4 +5,8 @@ def main():
     player2 = Player("Player 2")
     option = input("Do you want to toss a coin?(y/n) ")
 
+    while option != "n":
+        print("Hi")
+        option = input("Do you want to toss a coin?(y/n) ")
+
 main()
