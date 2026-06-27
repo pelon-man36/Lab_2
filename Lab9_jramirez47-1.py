@@ -6,6 +6,13 @@ def main():
     print(f"{player1.get_name()} has {player1.get_wallet()} coins.")
     print(f"{player2.get_name()} has {player2.get_wallet()} coins.")
     option = input("Do you want to toss a coin?(y/n) ")
+    
+    if option != "n":
+        while option != "y":
+            print("Invalid input.")
+            option = input("Do you want to toss a coin?(y/n) ")
+            if option == "n":
+                break
 
     while option != "n":
         print("Tossing coins...")
@@ -28,6 +35,13 @@ def main():
         print(f"{player1.get_name()} has {player1.get_wallet()} coins.")
         print(f"{player2.get_name()} has {player2.get_wallet()} coins.")
         option = input("Do you want to toss a coin?(y/n) ")
+
+        if option != "n":
+            while option != "y":
+                print("Invalid input.")
+                option = input("Do you want to toss a coin?(y/n) ")
+                if option == "n":
+                    break
     
     print("Match end!")
     print(f"{player1.get_name()} total: {player1.get_wallet()} coins.")
