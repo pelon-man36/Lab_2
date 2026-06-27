@@ -17,3 +17,9 @@ class Player(Coin):
 
     def lose_coin(self):
         self._wallet -= 1
+
+    def get_wallet(self):
+        print(f"There are {self._wallet} coins in the wallet.")
+
+    def get_name(self):
+        print(f"{self._name}")
