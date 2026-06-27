@@ -24,9 +24,19 @@ def main():
             print(f"No match! {player2.get_name()} wins a coin!")
             player1.lose_coin()
             player2.win_coin()
-            
+
         print(f"{player1.get_name()} has {player1.get_wallet()} coins.")
         print(f"{player2.get_name()} has {player2.get_wallet()} coins.")
         option = input("Do you want to toss a coin?(y/n) ")
+    
+    print("Match end!")
+    print(f"{player1.get_name()} total: {player1.get_wallet()} coins.")
+    print(f"{player2.get_name()} total: {player2.get_wallet()} coins.")
+    if player1.get_wallet() == player2.get_wallet():
+        print("Tie! No winner or loser!")
+    elif player1.get_wallet() > player2.get_wallet():
+        print(f"{player1.get_name()} wins!")
+    else:
+        print(f"{player2.get_name()} wins!")
 
 main()
