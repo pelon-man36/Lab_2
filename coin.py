@@ -12,5 +12,5 @@ class Coin():
             self._sideup = "Tails"
 
     def get_sideup(self):
-        print(f"The current side is {self._sideup}")
+        print(f"{self._sideup}")
 
