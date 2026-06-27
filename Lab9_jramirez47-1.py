@@ -3,19 +3,25 @@ from player import Player
 def main():
     player1 = Player("Player 1")
     player2 = Player("Player 2")
+    print()
+    print("---COIN MATCH: THE GAME---")
     print(f"{player1.get_name()} has {player1.get_wallet()} coins.")
     print(f"{player2.get_name()} has {player2.get_wallet()} coins.")
+    print()
     option = input("Do you want to toss a coin?(y/n) ")
+    print()
     
     if option != "n":
         while option != "y":
             print("Invalid input.")
+            print()
             option = input("Do you want to toss a coin?(y/n) ")
+            print()
             if option == "n":
                 break
 
     while option != "n":
-        print("Tossing coins...")
+        print("Tossing coin...")
         player1.toss_coin()
         side1 = player1.get_coin_side()
         player2.toss_coin()
@@ -31,15 +37,18 @@ def main():
             print(f"No match! {player2.get_name()} wins a coin!")
             player1.lose_coin()
             player2.win_coin()
-
+        print()
         print(f"{player1.get_name()} has {player1.get_wallet()} coins.")
         print(f"{player2.get_name()} has {player2.get_wallet()} coins.")
+        print()
         option = input("Do you want to toss a coin?(y/n) ")
 
         if option != "n":
             while option != "y":
                 print("Invalid input.")
+                print()
                 option = input("Do you want to toss a coin?(y/n) ")
+                print()
                 if option == "n":
                     break
 
@@ -48,14 +57,18 @@ def main():
         elif player2.get_wallet() == 0:
             break
     
-    print("Match end!")
+    print()
+    print("---Match end!---")
+    print()
     print(f"{player1.get_name()} total: {player1.get_wallet()} coins.")
     print(f"{player2.get_name()} total: {player2.get_wallet()} coins.")
+    print()
     if player1.get_wallet() == player2.get_wallet():
         print("Tie! No winner or loser!")
     elif player1.get_wallet() > player2.get_wallet():
         print(f"{player1.get_name()} wins!")
     else:
         print(f"{player2.get_name()} wins!")
+    print()
 
 main()
