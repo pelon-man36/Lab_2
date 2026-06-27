@@ -18,7 +18,7 @@ class Player(Coin):
         self._wallet -= 1
 
     def get_wallet(self):
-        print(f"{self._wallet}")
+        print(f"{self._wallet} coins.")
 
     def get_name(self):
         print(f"{self._name}")
