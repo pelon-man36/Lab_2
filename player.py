@@ -9,8 +9,7 @@ class Player(Coin):
         self._coin.toss()
 
     def get_coin_side(self):
-        get = Coin()
-        get.get_sideup()
+        self._coin.get_sideup()
 
     def win_coin(self):
         self._wallet += 1
